@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
 *
 {
 	margin: 0;
@@ -30,7 +31,7 @@ body
 .left_Side
 {
 	position: relative;
-	background: #003147;
+	background: #181818;
 	padding: 40PX;
 }
 
@@ -49,7 +50,7 @@ body
 	position: relative;
 	width: 200px;
 	height: 200px;
-	border-radius: 50%;
+	border-radius: 20%;
 	overflow: hidden;
 }
 .left_Side .profileText .imgBx img
@@ -78,6 +79,17 @@ body
 	font-size: 0.8em;
 	font-weight: 300;
 }
+
+.left_Side .profileText span{
+	color: #f40337;
+	font-size:0.8em;
+	font-weight:300;
+	text-transform: uppercase;
+	text-align: center;
+	line-height:1.4em;
+	animation: glitch 1s linear infinite;
+  }
+  
 .contactInfo
 {
 	padding-top: 40px;
@@ -106,7 +118,7 @@ body
 	display: inline-block;
 	width: 30px;
 	font-size: 18px;
-	color: #03a9f4;
+	color: #f40337;
 }
 .contactInfo ul li span
 {
@@ -120,7 +132,7 @@ body
 }
 .contactInfo.education h5
 {
-	color: #03a9f4;
+	color: #f40337;
 	font-weight: 500;
 }
 .contactInfo.education h4:nth-child(2)
@@ -139,8 +151,8 @@ body
 	width: 100%;
 	margin-top: 5px;
 	margin-bottom: 10px;
-	height: 6px;
-	background: #081921;
+	height: 7px;
+	background: #21080c;
 	display: block;
 	overflow: hidden;
 }
@@ -150,7 +162,7 @@ body
 	top: 0;
 	left: 0;
 	height: 100%;
-	background: #03a9f4;
+	background: #f40337;
 }
 .right_Side
 {
@@ -168,7 +180,7 @@ body
 }
 .title2
 {
-	color: #003147;
+	color: #470006;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	margin-bottom: 10px;
@@ -198,7 +210,7 @@ p
 .about .box .text h4
 {
 	text-transform: uppercase;
-	color: #2a7da2;
+	color: #a22a2a;
 	font-size: 16px;
 }
 
@@ -232,7 +244,7 @@ p
 	top: 0;
 	left: 0;
 	height: 100%;
-	background: #03a9f4;
+	background: #f40337;
 }
 
 .interest ul
@@ -249,11 +261,23 @@ p
 }
 .interest ul li .fa
 {
-	color: #03a9f4;
+	color: #f40337;
 	font-size: 18px;
 	width: 20px;
 
 }
+
+  @keyframes glitch{
+	2%,64%{
+	  transform: translate(2px,0) skew(0deg);
+	}
+	4%,60%{
+	  transform: translate(-2px,0) skew(0deg);
+	}
+	62%{
+	  transform: translate(0,0) skew(5deg); 
+	}
+  }
 
 
 @media (max-width: 1000px)
